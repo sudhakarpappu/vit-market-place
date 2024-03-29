@@ -99,11 +99,31 @@ section {
   width: 300px;
   display: inline;
 }
-.obj1 {
-  /* Define your CSS styles here */
+/*.obj1 {
+  /* Define your CSS styles here 
+
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
   background-color: lightgray;
   display: inline-block;
+
+
+}*/
+.obj1 {
+  /* Define your CSS styles here */
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px; /* Reduced margin to accommodate 5 images in a row */
+  background-color: lightgray;
+  display: inline-block;
+  width: calc(20% - 10px); /* 20% width minus padding and borders */
+  box-sizing: border-box; /* Include padding and borders in the element's total width */
+  vertical-align: middle; /* Align elements vertically */
+}
+
+/* Ensure images within .obj1 are sized appropriately */
+.obj1 img {
+  width: 100%; /* Ensure the image fills its container */
+  height: 150px; /* Set a specific height for the images */
 }
